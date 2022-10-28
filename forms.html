@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Action - the location on where to send the form data
+
+        Method - method on sending the form data
+            GET  - form data are displayed in the web addresses' browser 
+            POST - form data are NOT displayed in the web addresses' browser
+     -->
+    <form action="process_form.php" method="POST">
+        <p>
+            Name: <br>
+            <input type="text" name="user_name" id="" placeholder="Please enter your name" required>
+        </p>
+        <p>
+            Message: <br>
+            <textarea name="user_message" id="" cols="30" rows="10" required></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Submit message">
+        </p>
+    </form>
+</body>
+</html>
